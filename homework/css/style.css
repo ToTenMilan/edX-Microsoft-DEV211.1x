@@ -48,7 +48,7 @@ main {
     src: url('../fonts/mod3_contrail_one.ttf') format('truetype');
 }
 body {
-    font-family: 'News Cycle';
+    font-family: 'News Cycle' !important;
 }
 header {
     font-family: 'Contrail one';
@@ -56,7 +56,6 @@ header {
 article {
     margin: 5px;
     padding: 5px 5px;
-    box-shadow: -1px -1px 6px #888888
 }
 @media print {
     header {
@@ -73,21 +72,9 @@ article {
     }
 }
 
-section#carousel > figure > img {
-    display: none;
-    margin: 0px;
-}
-section#carousel > figure.visible > img {
-    display: block;
-    position: relative;
-    overflow: hidden;
-}
-section#carousel > figure > figcaption {
-    display: none;
-}
-section#carousel > figure.visible > figcaption {
-    display: block;
+.carousel-inner {
     text-align: center;
-    font-weight: bold;
-    font-size: 1.5em;
+}
+.carousel .item > img {
+    display: inline-block;
 }
